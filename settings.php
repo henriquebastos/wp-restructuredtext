@@ -1,12 +1,4 @@
 <?php
-/*
-Plugin Name: WP-ReStructuredText
-Description: Allows you to use ReStructuredText in posts and pages
-Version: 1.0
-Plugin URI: http://henriquebastos.net/projects/wp-restructuredtext/
-Author: Henrique Bastos
-Author URI: http://henriquebastos.net
-*/
 /*  Copyright 2014 Henrique Bastos (henrique@bastos.net)
 
     This program is free software; you can redistribute it and/or modify
