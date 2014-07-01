@@ -40,7 +40,7 @@ class Settings {
             'callback' => 'settings_rst2html_path'
         ),
         'rst2html_args' => array(
-            'default' => '--link-stylesheet --toc-entry-backlinks --initial-header-level=2  --no-doc-title --no-footnote-backlinks',
+            'default' => '--link-stylesheet --toc-entry-backlinks --initial-header-level=2  --no-doc-title --no-footnote-backlinks --syntax-highlight=short',
             'type' => 'string',
             'help' => 'rst2html Arguments',
             'callback' => 'settings_rst2html_args'
