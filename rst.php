@@ -125,6 +125,7 @@ class ReStructuredText_Plugin {
     */
     public function content_edit_pre($content, $post_id) {
         $post = get_post($post_id);
+        $meta = null;
 
         if (
             $this->is_Restable($post->post_type)
@@ -132,15 +133,11 @@ class ReStructuredText_Plugin {
         ){
             $meta = get_metadata('post', $post->ID, 'post_rst');
 
-            if (is_array($meta)) {
-                $content = $meta[0];
-            }
-            else {
-                $content = $meta;
-            }
+            if (is_array($meta))
+                $meta = $meta[0];
         }
 
-        return $content;
+        return $meta ?: $content;
     }
 
     /*
